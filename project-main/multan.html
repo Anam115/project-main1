@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multan Sultans Squad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDetails(id) {
+      document.getElementById(id).classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-green-50 font-sans">
+  <!-- Header -->
+  <header class="bg-green-600 text-white py-6 shadow-lg">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold">Multan Sultans Squad</h1>
+      <p class="text-lg mt-2">Pakistan Super League (PSL)</p>
+    </div>
+  </header>
+
+  <!-- Captain Section -->
+  <section class="max-w-5xl mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Captain: Mohammad Rizwan</h2>
+    <div class="md:flex items-center gap-6">
+      <img src="./img/rizwan.jpeg" class="w-40 h-40 object-cover rounded-xl shadow-md" alt="Mohammad Rizwan">
+      <div>
+        <p class="text-gray-700 text-lg">Mohammad Rizwan is one of the most dependable wicket-keeper batsmen in the world. Known for his consistency and calm leadership, he leads Multan Sultans from the front.</p>
+        <p class="mt-2 text-sm text-gray-600 italic">Hobbies: Reading Quran, fitness, spending time with family</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Player Cards -->
+  <section class="max-w-6xl mx-auto py-10 px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Example Player Card -->
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Usman-Khan.jpg" class="w-full h-48 object-cover object-top rounded" alt="Usman Khan">
+      <h3 class="text-xl font-bold mt-4 text-green-700">Usman Khan</h3>
+      <p class="text-red-600 font-semibold">Withdrawn</p>
+      <p class="text-gray-700 text-sm mt-1">Middle order Batter</p>
+      <button onclick="toggleDetails('owen')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="owen" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 23y 119d</li>
+          <li><strong>Batting:</strong> Right hand Bat</li>
+          <li><strong>Bowling:</strong> Right arm Medium</li>
+          <li><strong>Hobbies:</strong> Surfing, Gym, Traveling</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- 01 -->
+     <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Iftikhar-Ahmed.jpg" class="w-full h-48 object-cover object-top rounded" alt="Mitchell Owen">
+      <h3 class="text-xl font-bold mt-4 text-green-700">Iftikhair Ahmad</h3>
+      
+      <p class="text-gray-700 text-sm mt-1">Middle order Batter</p>
+      <button onclick="toggleDetails('iftikhar')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="iftikhar" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 23y 119d</li>
+          <li><strong>Batting:</strong> Right hand Bat</li>
+          <li><strong>Bowling:</strong> Right arm Medium</li>
+          <li><strong>Hobbies:</strong> Surfing, Gym, Traveling</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- -----------02 -->
+      <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Michael-Bracewell.jpg" class="w-full h-48 object-cover object-top rounded" alt="Michael Bracewell">
+      <h3 class="text-xl font-bold mt-4 text-green-700">Michael Bracewell</h3>
+      
+      <p class="text-gray-700 text-sm mt-1">Middle order Batter</p>
+      <button onclick="toggleDetails('michael')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="michael" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 23y 119d</li>
+          <li><strong>Batting:</strong> Right hand Bat</li>
+          <li><strong>Bowling:</strong> Right arm Medium</li>
+          <li><strong>Hobbies:</strong> Surfing, Gym, Traveling</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- --------------------------04 -->
+      <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Usama-Mir.jpg" class="w-full h-48 object-cover object-top rounded" alt="Mitchell Owen">
+      <h3 class="text-xl font-bold mt-4 text-green-700">Usama Mir</h3>
+      
+      <p class="text-gray-700 text-sm mt-1">Middle order Batter</p>
+      <button onclick="toggleDetails('usama')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="usama" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 23y 119d</li>
+          <li><strong>Batting:</strong> Right hand Bat</li>
+          <li><strong>Bowling:</strong> Right arm Medium</li>
+          <li><strong>Hobbies:</strong> Surfing, Gym, Traveling</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <!-- -------------------05 -->
+      <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/David-Willey.jpg" class="w-full h-48 object-cover object-top rounded" alt="Mitchell Owen">
+      <h3 class="text-xl font-bold mt-4 text-green-700">David Willey</h3>
+      
+      <p class="text-gray-700 text-sm mt-1">Middle order Batter</p>
+      <button onclick="toggleDetails('david')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="david" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 23y 119d</li>
+          <li><strong>Batting:</strong> Right hand Bat</li>
+          <li><strong>Bowling:</strong> Right arm Medium</li>
+          <li><strong>Hobbies:</strong> Surfing, Gym, Traveling</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <!-- -----------------06 -->
+      <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Usman-Khan.jpg" class="w-full h-48 object-cover object-top rounded" alt="Mitchell Owen">
+      <h3 class="text-xl font-bold mt-4 text-green-700">Usman Khan</h3>
+      
+      <p class="text-gray-700 text-sm mt-1">Middle order Batter</p>
+      <button onclick="toggleDetails('david')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="david" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 23y 119d</li>
+          <li><strong>Batting:</strong> Right hand Bat</li>
+          <li><strong>Bowling:</strong> Right arm Medium</li>
+          <li><strong>Hobbies:</strong> Surfing, Gym, Traveling</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Add more players in same structure here -->
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center bg-green-600 text-white py-4">
+    <p>&copy; 2025 Multan Sultans Fan Page</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peshawar Zalmi Squad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDetails(id) {
+      const element = document.getElementById(id);
+      element.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-yellow-50 font-sans">
+  <!-- Header -->
+  <header class="bg-yellow-500 text-white py-6 shadow-lg">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold">Peshawar Zalmi Squad</h1>
+      <p class="text-lg mt-2">Pakistan Super League (PSL)</p>
+    </div>
+  </header>
+
+  <!-- Captain Section -->
+  <section class="max-w-5xl mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Captain: Babar Azam</h2>
+    <div class="md:flex items-center gap-6">
+      <img src="./img/babarazamzalmi.jpeg" class="w-40 h-40 object-cover rounded-xl shadow-md" alt="Babar Azam">
+      <div>
+        <p class="text-gray-700 text-lg">Babar Azam is a top-order batsman known for his consistency and elegance. As captain of Peshawar Zalmi, he brings leadership and class to the squad.</p>
+        <p class="mt-2 text-sm text-gray-600 italic">Hobbies: Fitness training, car collection, video games</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Player Cards -->
+  <section class="max-w-6xl mx-auto py-10 px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Example Player Card -->
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/harisa.jpeg" class="w-full h-48 object-cover rounded" alt="Muhammad Haris">
+      <h3 class="text-xl font-bold mt-4 text-yellow-700">Muhammad Haris</h3>
+      <p class="text-gray-700 text-sm">
+        <h5 class="font-bold">Top order Batter</h5>  <br>
+
+
+      </p>
+      <button onclick="toggleDetails('wahab')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="wahab" class="mt-2 hidden">
+        <p class="text-gray-600 text-sm">Age:
+23y 289d <br>
+Batting:
+Right hand Bat <br>
+Bowling:
+Right arm Offbreak</p>
+      </div>
+    </div>
+
+    <!-- Add more players below -->
+
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/saim.jpeg" class="w-full h-48 object-cover rounded" alt="Saim Ayub">
+      <h3 class="text-xl font-bold mt-4 text-yellow-700">Saim Ayub</h3>
+      <p class="text-gray-700 text-sm">
+        <h5 class="font-bold">Top order Batter</h5>  <br>
+
+
+      <button onclick="toggleDetails('saim')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="saim" class="mt-2 hidden">
+        <p class="text-gray-600 text-sm">Age:
+22y 234d <br>
+Batting:
+Left hand Bat <br>
+Bowling:
+Right arm Offbreak.</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/cadmore.jpeg" class="w-full h-48 object-cover rounded" alt="Tom Kohler-Cadmore">
+      <h3 class="text-xl font-bold mt-4 text-yellow-700">Tom Kohler-Cadmore</h3>
+      <p class="text-gray-700 text-sm">
+        <h5 class="font-bold">Wicket Keeper Batter</h5>  <br>
+
+
+      <button onclick="toggleDetails('tom')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="tom" class="mt-2 hidden">
+        <p class="text-gray-600 text-sm">Age:
+30y 147d <br>
+Batting:
+Right hand Bat <br>
+Bowling:
+Right arm Offbreak.</p></p>
+      </div>
+    </div>
+
+    <!-- Add more players as needed -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center bg-yellow-500 text-white py-4">
+    <p>&copy; 2025 Peshawar Zalmi Fan Page |</p>
+  </footer>
+</body>
+</html>

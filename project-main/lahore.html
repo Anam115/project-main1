@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lahore Qalandars Squad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDetails(id) {
+      document.getElementById(id).classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-red-50 font-sans">
+  <!-- Header -->
+  <header class="bg-red-700 text-white py-6 shadow-lg">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold">Lahore Qalandars Squad</h1>
+      <p class="text-lg mt-2">Pakistan Super League (PSL)</p>
+    </div>
+  </header>
+
+  <!-- Captain Section -->
+  <section class="max-w-5xl mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Captain: Shaheen Afridi</h2>
+    <div class="md:flex items-center gap-6">
+      <img src="./img/Shaheen-Afridi.jpg" class="w-40 h-40 object-cover rounded-xl shadow-md" alt="Shaheen Afridi">
+      <div>
+        <p class="text-gray-700 text-lg">Shaheen Shah Afridi is a world-class fast bowler and a fearless leader. As the captain of Lahore Qalandars, he brings aggression, passion, and skill to the field.</p>
+        <p class="mt-2 text-sm text-gray-600 italic">Hobbies: Bowling practice, fishing, spending time with family</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Player Cards -->
+  <section class="max-w-6xl mx-auto py-10 px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Player 1 -->
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Fakhar-Zaman.jpg" class="w-full h-48 object-cover object-top rounded" alt="Fakhar Zaman">
+      <h3 class="text-xl font-bold mt-4 text-red-700">Fakhar Zaman</h3>
+      <p class="text-gray-700 text-sm mt-1">Top order Batter</p>
+      <button onclick="toggleDetails('fakhar')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="fakhar" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 33y</li>
+          <li><strong>Batting:</strong> Left hand Bat</li>
+          <li><strong>Bowling:</strong> Right arm Offbreak</li>
+          <li><strong>Hobbies:</strong> Reading, Hiking, Fitness</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Player 2 -->
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Haris-Rouf.jpg" class="w-full h-48 object-cover object-top rounded" alt="Haris Rauf">
+      <h3 class="text-xl font-bold mt-4 text-red-700">Haris Rauf</h3>
+      <p class="text-gray-700 text-sm mt-1">Fast Bowler</p>
+      <button onclick="toggleDetails('haris')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="haris" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 30y</li>
+          <li><strong>Bowling:</strong> Right arm Fast</li>
+          <li><strong>Hobbies:</strong> Cars, Gym, Cricket Analysis</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Player 3 -->
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Daryl-Mitchell.jpg" class="w-full h-48 object-cover object-top rounded" alt="Daryl Mitchell">
+      <h3 class="text-xl font-bold mt-4 text-red-700">Daryl Mitchell</h3>
+      <p class="text-gray-700 text-sm mt-1">All-rounder</p>
+      <button onclick="toggleDetails('daryl')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="daryl" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 25y</li>
+          <li><strong>Bowling:</strong> Right arm Leg Spin</li>
+          <li><strong>Hobbies:</strong> Music, Traveling, Bowling drills</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Player 4 -->
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Sikander-Raza.jpg" class="w-full h-48 object-cover object-top rounded" alt="Sikander Raza">
+      <h3 class="text-xl font-bold mt-4 text-red-700">Sikander Raza</h3>
+      <p class="text-gray-700 text-sm mt-1">All-Rounder</p>
+      <button onclick="toggleDetails('raza')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="raza" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 24y</li>
+          <li><strong>Batting:</strong> Right hand Bat</li>
+          <li><strong>Hobbies:</strong> Batting practice, Reading books</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Player 5 -->
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Kusal-Perea.jpg" class="w-full h-48 object-cover object-top rounded" alt="Kusal Perea">
+      <h3 class="text-xl font-bold mt-4 text-red-700">Kusal Perea</h3>
+      <p class="text-gray-700 text-sm mt-1">Right-arm Fast</p>
+      <button onclick="toggleDetails('kusal')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="kusal" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 30y</li>
+          <li><strong>Bowling:</strong> Right arm Fast</li>
+          <li><strong>Hobbies:</strong> Swimming, Long walks</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Player 6 -->
+    <div class="bg-white rounded-lg shadow-md p-5">
+      <img src="./img/Asif-Ali.jpg" class="w-full h-48 object-cover object-top rounded" alt="Asif Ali">
+      <h3 class="text-xl font-bold mt-4 text-red-700">Asif Ali</h3>
+      <p class="text-gray-700 text-sm mt-1">Middle Order Batter</p>
+      <button onclick="toggleDetails('asif')" class="mt-2 text-blue-600 hover:underline">More Info</button>
+      <div id="asif" class="mt-2 hidden">
+        <ul class="text-gray-600 text-sm space-y-1">
+          <li><strong>Age:</strong> 38y</li>
+          <li><strong>Batting:</strong> Right hand Bat</li>
+          <li><strong>Bowling:</strong> Right arm Offbreak</li>
+          <li><strong>Hobbies:</strong> Reading, Charity work, Mentoring</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center bg-red-700 text-white py-4">
+    <p>&copy; 2025 Lahore Qalandars Fan Page</p>
+  </footer>
+</body>
+</html>
